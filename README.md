@@ -4,7 +4,7 @@
 - 👀 I’m interested in Front End Development & Ui/UX Design
 - 📫 How to reach me ?
 - 📧 Email me : abdoamir6996@gmail.com
-- 🌱 Looking forward to create a lot of Projects together , Cheers ;)
+- 🌱 Looking forward to creating a lot of Projects together , Cheers ;)
 - 🎨 Ui Design : https://www.figma.com/file/kwtNmglvugJVYXen92BzNg/Product-Details-Page-Design-of-E-commerce-Base-Website-(Community)?node-id=0%3A1
 
 - Main Page : 
