@@ -4,6 +4,10 @@ import MarkedStar from './icons/MarkedStar.svg'
 import EmptyStar from './icons/EmptyStar.svg'
 import DashedLine from './icons/DashedLine.svg'
 import ListIcon from './icons/ListIcon.svg'
+import img1 from './tv/image 2.png'
+import img2 from './tv/image 3.png'
+import img3 from './tv/image 4.png'
+import img4 from './tv/image 5.png'
 
 const Hero = (props) => {
     let [counter, setCounter] = useState(1)
@@ -14,22 +18,34 @@ const Hero = (props) => {
                 <div className="pictures-container main">
                     <div className='active' style={{
                         border: '1px solid #E73C17'
+                    }} onClick={()=> {
+                        let img = document.getElementById('displayed-img')
+                        img.src = img1 
                     }}>
                         <img src={props.TvImg1} alt="" />
                     </div>
-                    <div>
+                    <div onClick={()=> {
+                        let img = document.getElementById('displayed-img')
+                        img.src = img2
+                    }}>
                         <img src={props.TvImg2} alt="" />
                     </div>
-                    <div>
+                    <div onClick={()=> {
+                        let img = document.getElementById('displayed-img')
+                        img.src = img3
+                    }}>
                         <img src={props.TvImg3} alt="" />
                     </div>
-                    <div>
+                    <div onClick={()=> {
+                        let img = document.getElementById('displayed-img')
+                        img.src = img4
+                    }}>
                         <img src={props.TvImg4} alt="" />
                     </div>
                 </div>
                 <div className="displayed-container main">
                     <div>
-                        <img src={props.TvMainImg} alt="" />
+                        <img id='displayed-img' src={props.TvMainImg} alt="" />
                     </div>
                     <p>*LG C2 42 (106cm) 4K Smart OLED evo TV</p>
                 </div>
@@ -100,23 +116,35 @@ const Hero = (props) => {
             <main className='responsive'>
                 <div className="responsive-displayed-container">
                     <div>
-                        <img src={props.TvMainImg} alt="" />
+                        <img id='displayed-imgs' src={props.TvMainImg} alt="" />
                     </div>
                     <p>*LG C2 42 (106cm) 4K Smart OLED evo TV</p>
                 </div>
                 <div className="responsive-pictures-container">
-                    <div className='active' style={{
+                <div className='active' style={{
                         border: '1px solid #E73C17'
+                    }} onClick={()=> {
+                        let img = document.getElementById('displayed-imgs')
+                        img.src = img1 
                     }}>
                         <img src={props.TvImg1} alt="" />
                     </div>
-                    <div>
+                    <div onClick={()=> {
+                        let img = document.getElementById('displayed-imgs')
+                        img.src = img2
+                    }}>
                         <img src={props.TvImg2} alt="" />
                     </div>
-                    <div>
+                    <div onClick={()=> {
+                        let img = document.getElementById('displayed-imgs')
+                        img.src = img3
+                    }}>
                         <img src={props.TvImg3} alt="" />
                     </div>
-                    <div>
+                    <div onClick={()=> {
+                        let img = document.getElementById('displayed-imgs')
+                        img.src = img4
+                    }}>
                         <img src={props.TvImg4} alt="" />
                     </div>
                 </div>
