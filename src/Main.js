@@ -9,7 +9,6 @@ import konka from './tvimg/konka.svg'
 import FooterAd from './components/FooterAd'
 import Footer from './components/Footer'
 import './components/Navbar.css'
-// import Product from './Product'
 
 const Main = () => {
 
