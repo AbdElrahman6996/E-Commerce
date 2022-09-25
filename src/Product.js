@@ -16,6 +16,7 @@ import RelatedProducts from './product components/RelatedProducts'
 import sonny from './tvimg/sonny.svg'
 import './product components/Relatedproducts.css'
 import RelatedTxt from './product components/RelatedTxt'
+import ComponentsTabs from './product components/ComponentsTabs'
 const Product = () => {
   return (
     <section className='product-page'>
@@ -48,14 +49,15 @@ const Product = () => {
           TvPrice="$600.72"
           TvPriceBefore="$800.00"
         />
-        <TvMenu
+        {/* <TvMenu
           TvDescription1="The LG C2 42 (106cm) 4K Smart OLED evo TV is the best all-around OLED TV we've tested. Although all OLEDs deliver similar fantastic picture quality, this one stands out for its value because it has many gaming-oriented features that are great for gamers."
           TvDescription2="
           *Only 65G2 is shown in the image for example purposes. All 2022 LG OLED models feature eco-friendly packaging.
           **65C2 Stand model is at a minimum 39% lighter than the C1 series.
           ***The 'Reducing CO2' footprint label applies to 65C2 only. All other C2 models feature a 'CO2 Measured' label.
           ****UL ECV certification based on TV frame and back cover. Percentage of recycled content varies by model and size"
-        />
+        /> */}
+        <ComponentsTabs/>
         <RelatedTxt/>
         <section className='related-products-section'>
           <RelatedProducts
