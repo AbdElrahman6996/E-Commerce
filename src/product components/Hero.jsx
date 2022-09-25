@@ -11,6 +11,8 @@ import img4 from './tv/image 5.png'
 
 const Hero = (props) => {
     let [counter, setCounter] = useState(1)
+    let [active, setActive] = useState(1)
+    console.log(active)
     return (
         <main className='Hero-Product'>
             <div className="hide">
@@ -112,7 +114,6 @@ const Hero = (props) => {
                     </div>
                 </div>
             </div>
-
             <main className='responsive'>
                 <div className="responsive-displayed-container">
                     <div>
@@ -121,29 +122,142 @@ const Hero = (props) => {
                     <p>*LG C2 42 (106cm) 4K Smart OLED evo TV</p>
                 </div>
                 <div className="responsive-pictures-container">
-                <div className='active' style={{
-                        border: '1px solid #E73C17'
-                    }} onClick={()=> {
+                <div className='active' id="initial" onClick={()=> {
                         let img = document.getElementById('displayed-imgs')
-                        img.src = img1 
+                        let mew = document.getElementById('initial')
+                        if (active === 3){
+                            let initial = document.getElementById('3')
+                            img.src = img1
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            console.log('yes 1')
+                            setActive(1)
+                        }
+                        if (active === 2){
+                            let initial = document.getElementById('3')
+                            img.src = img1
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            console.log('yes 2')
+                            setActive(1)
+
+                        }
+                        if (active === 4){
+                            let initial = document.getElementById('4')
+                            img.src = img1
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            console.log('yes 3')
+                            setActive(1)
+                        }
                     }}>
                         <img src={props.TvImg1} alt="" />
                     </div>
-                    <div onClick={()=> {
+                    <div id='2' onClick={()=> {
                         let img = document.getElementById('displayed-imgs')
-                        img.src = img2
+                        let mew = document.getElementById('2')
+                        if (active === 1){
+                            let initial = document.getElementById('initial')
+                            img.src = img2
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            console.log('yes 11')
+                            setActive(2)
+                        }
+                        if (active === 3){
+                            let initial = document.getElementById('3')
+                            img.src = img2
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(2)
+                            console.log('yes 12')
+
+                        }
+                        if (active === 4){
+                            let initial = document.getElementById('4')
+                            img.src = img2
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(2)
+                            console.log('yes 13')
+                        }
                     }}>
                         <img src={props.TvImg2} alt="" />
                     </div>
-                    <div onClick={()=> {
+                    <div id='3' onClick={()=> {
                         let img = document.getElementById('displayed-imgs')
-                        img.src = img3
+                        let mew = document.getElementById('3')
+                        if (active === 1){
+                            let initial = document.getElementById('initial')
+                            img.src = img3
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(3)
+                            console.log('yes 21')
+
+                        }
+                        if (active === 2){
+                            let initial = document.getElementById('2')
+                            img.src = img3
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(3)
+                            console.log('yes 22')
+
+                        }
+                        if (active === 4){
+                            let initial = document.getElementById('4')
+                            img.src = img3
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(3)
+                            console.log('yes 23')
+                        }
                     }}>
                         <img src={props.TvImg3} alt="" />
                     </div>
-                    <div onClick={()=> {
+                    <div id='4' onClick={()=> {
                         let img = document.getElementById('displayed-imgs')
-                        img.src = img4
+                        let mew = document.getElementById('4')
+                        if (active === 1){
+                            let initial = document.getElementById('initial')
+                            img.src = img4
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(4)
+                            console.log('yes 31')
+
+                        }
+                        if (active === 2){
+                            let initial = document.getElementById('2')
+                            img.src = img4
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(4)
+                            console.log('yes 32')
+
+                        }
+                        if (active === 3){
+                            let initial = document.getElementById('3')
+                            img.src = img4
+                            mew.setAttribute("id",'active')
+                            mew.classList.add('active')
+                            initial.classList.remove('active')
+                            setActive(4)
+                            console.log('yes 33')
+
+                        }
                     }}>
                         <img src={props.TvImg4} alt="" />
                     </div>
