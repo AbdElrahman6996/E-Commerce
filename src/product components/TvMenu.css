@@ -1,0 +1,113 @@
+.TvMenu {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 500px;
+    margin-bottom: 51px;
+}
+
+.tv-menus {
+    /* border: 2px solid green; */
+    width: 608px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+    overflow: visible;
+}
+
+.tv-menus a {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #191919;
+}
+
+.breaking-line {
+    width: 100%;
+    height: 3px;
+    background: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    margin-bottom: 38px;
+}
+
+.tv-menus img {
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.txt-container {
+    height: 383px;
+    max-width: 1000px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.txt-container p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #191919;
+}
+
+@media screen and (max-width: 670px) {
+    .TvMenu{
+        height: 600px;
+    }
+    .tv-menus {
+        width: 90%;
+    }
+    .txt-container p {
+        font-size: 14px;
+        height: 550px;
+    }
+}
+@media screen and (max-width: 580px) {
+
+    .txt-container p {
+        /* border: 2px solid salmon; */
+        height: 550px;
+        justify-content: center;
+    }
+    .topping{
+        padding-bottom: 50px;
+    }
+    .txt-container{
+        gap: 10px;
+        /* border: 2px solid red; */
+        height: 800px;
+    }
+}
+@media screen and (max-width: 491px) {
+    .tv-menus a {
+    font-size: 18px;
+    }
+    .tv-menus img {
+        width: 105px;
+        left: 0px;
+    }
+    .txt-container p {
+        overflow: hidden;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 374px) {
+    .tv-menus a {
+    font-size: 14px;
+    }
+    .tv-menus img {
+        width: 80px;
+        left: 0px;
+    }
+    .txt-container p {
+        font-size: 12px;
+    }
+}

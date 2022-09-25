@@ -1,0 +1,111 @@
+ .productfooterad {
+    background: url('../img/Background.svg');
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+
+.product-left-section {
+    width: 547px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-left-section>div>h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.product-left-section>div>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.product-right-section {
+    display: flex;
+    align-items: center;
+    width: 700px;
+}
+
+.product-right-section>input {
+    width: 448px;
+    height: 73px;
+    padding-left: 38px;
+    border: none;
+    outline: none;
+}
+
+.product-right-section>a {
+    width: 268px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E73C17;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1289px) {
+    .productfooterad {
+        flex-direction: column;
+        height: 169px;
+    }
+    .product-right-section {
+        width: 547px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .product-right-section > input{
+        width: 200px;
+        padding-left: 10px;
+        height: 40px;
+    }
+    .product-right-section>a {
+        height: 40px;
+        width: 100px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .productfooterad {
+        flex-direction: column;
+        height: 169px;
+    }
+    .product-left-section {
+    width: 350px;
+    }
+    .product-left-section>div>h4 {
+        font-size: 16px;
+    }
+    .product-left-section>div>p {
+        font-size: 14px;
+    }
+    .product-right-section {
+    width: 350px;
+    }
+    .product-right-section > input{
+        width: 180px;
+        height: 35px;
+    }
+    .product-right-section>a {
+        height: 35px;
+        width: 100px;
+        font-size: 10px;
+    }
+} 
