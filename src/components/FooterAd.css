@@ -1,0 +1,115 @@
+.footerad {
+    background: url('../img/Background.svg');
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.left-section {
+    width: 547px;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-section>div>h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.left-section>div>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 700px;
+}
+
+.right-section>input {
+    width: 448px;
+    height: 73px;
+    padding-left: 38px;
+    border: none;
+    outline: none;
+}
+
+.right-section>a {
+    width: 268px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E73C17;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1289px) {
+    .footerad {
+        /* border: 2px solid red; */
+        flex-direction: column;
+        height: 169px;
+    }
+    .right-section {
+        width: 547px;
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-section > input{
+        width: 200px;
+        padding-left: 10px;
+        height: 40px;
+    }
+    .right-section>a {
+        height: 40px;
+        width: 100px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .footerad {
+        /* border: 2px solid blue; */
+        flex-direction: column;
+        height: 169px;
+    }
+    .left-section {
+    width: 350px;
+    }
+    .left-section>div>h4 {
+        font-size: 16px;
+    }
+    .left-section>div>p {
+        font-size: 14px;
+    }
+    .right-section {
+    width: 350px;
+    }
+    .right-section > input{
+        width: 180px;
+        height: 35px;
+    }
+    .right-section>a {
+        height: 35px;
+        width: 100px;
+        font-size: 10px;
+    }
+}

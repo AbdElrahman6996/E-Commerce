@@ -1,0 +1,103 @@
+.menu {
+    height: 70px;
+    width: 100vw;
+    background: #2F333A;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.menuicon{
+    height: 70px;
+}
+.big-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 1180px;
+    height: 70px;
+    padding-right: 60px;
+
+}
+
+.navigation {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 675px;
+}
+
+.navigation>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+
+.last {
+    width: 80px;
+}
+
+.navigation>div>a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.active {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #E73C17;
+}
+
+.right-container {
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-container>.container {
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    height: 70px;
+    gap: 5px;
+}
+
+.text>p {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.text>span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1441px) {
+    .menu{
+        display: none;
+    }
+} 
